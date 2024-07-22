@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Character set and page title -->
+    <meta charset="utf-8">
+    <title>Example App</title>
+
+    <!-- Link to a CSS file located in the "/public" directory -->
+    <link rel="stylesheet" href="/public/index.css">
+</head>
+<body>
+    <!-- If there is an "error" variable, display an error box -->
+    {{#if error}}
+    <div class="error-box">{{error}}</div>
+    {{/if}}
+
+    <!-- render body -->
+    {{{body}}}
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<h1>CPI310 Message Board</h1>
+
+<!-- If there is a user variable, display a logout link -->
+{{#if user}}<a href="/logout">logout</a>{{/if}}
+
+<!-- Unordered list for displaying messages -->
+<ul class="message-list">
+  {{#each messages}}
+    <!-- Displays the author and message for each message -->
+    <li>{{author}}: {{message}}</li>
+  {{/each}}
+</ul>
+
+<!-- If there is a user variable, display a message input form -->
+{{#if user}}
+  <form class="message-form" action="/message" method="POST">
+    <label>Message
+      <!-- Enter a new message -->
+      <input type="text" name="message" />
+    </label>
+    <!-- Button to submit the message -->
+    <button type="submit">send</button>
+  </form>
+{{else}}
+  <!-- If no user is logged in, display links to register and login -->
+  <a href="/register">Register</a>
+  <a href="/login">Login</a>
+{{/if}}

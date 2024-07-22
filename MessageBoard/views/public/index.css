@@ -1,0 +1,79 @@
+body {
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Dark background for the entire page */
+body {
+    background-color: black;
+}
+
+.message-board {
+    background-color: #121212; /* Dark background color for the message board */
+    color: white; /* White text color for better contrast */
+    padding: 20px; 
+}
+
+form {
+    padding: 1em; 
+}
+
+/* Styling for error messages */
+.error-box {
+    background: #CC0000; /* Red background for error messages */
+    color: white; /* White text color for better visibility */
+    padding: 1em; 
+}
+
+.message-list {
+    list-style-type: none; /* Remove list item bullets */
+    padding-left: 0; 
+    display: flex; 
+    flex-direction: column; /* Arrange list vertically */
+    align-items: flex-start; 
+}
+
+
+.message-list li {
+    margin: 1em; 
+    background: white; /* White background for each message item */
+    padding: 4px; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); 
+    border-radius: 4px; /* Rounded corners for each message item */
+}
+
+.message-form {
+    display: flex; 
+}
+
+.message-form label {
+    display: flex; 
+    flex: auto; 
+    flex-direction: column; /* Arrange labels vertically */
+}
+
+.message-form button {
+    margin-left: 1em; 
+    padding: 6px; 
+    align-self: self-end; /* Align the submit button to the end */
+}
+
+.message-form input {
+    padding: 6px; 
+    border-radius: 6px; 
+    border: 1px solid black; /* Black border around input areas */
+}
+
+a {
+    color: blue; /* Blue text color for links */
+    background: #e4e4e4; /* Light background for links */
+    border: 1px solid darkgray; 
+    padding: 5px; 
+    border-radius: 5px; 
+}
+
+
+a:hover {
+    background-color: #c3c3c3; /* Darker background for links on hover */
+}
