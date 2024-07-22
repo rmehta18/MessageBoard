@@ -1,7 +1,7 @@
 /*
 Author: Rithik Mehta
 Date: 11/6/23
-Description: CPI 310 Message Board tutorial
+Description: Message Board
 */
 
 
